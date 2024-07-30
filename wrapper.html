@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Netquiz Embed</title>
+    <script>
+        function refreshIframe() {
+            const iframe = document.getElementById('netquiz-iframe');
+            iframe.src = iframe.src;
+        }
+
+        // Refresh the iFrame every 5 minutes (300000 milliseconds)
+        setInterval(refreshIframe, 300000);
+    </script>
+</head>
+<body>
+    <iframe id="netquiz-iframe" src="https://netquiz.ccdmd.qc.ca/app/client.php?projet=1629&questionnaire=5&evaluation=2"
+    width="800" height="600" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
